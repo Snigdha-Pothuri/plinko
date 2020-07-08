@@ -24,22 +24,8 @@ class plinko {
         //image(this.image, 0, 0,x,y);
         ellipse(0,0,this.radius,this.radius)
         pop(); 
-
-        for (var a = 40; a<=width;a=a+50){
-            plinkos.push(new plinko(a,75));
-            }  
-        
-            for (var a = 15; a<=width-10 ;a=a+50){
-                plinkos.push(new plinko(a,175));
-                } 
-        
-            for (var a = 40; a<=width;a=a+50){
-            plinkos.push(new plinko(a,275));
-             } 
-        
-             for (var a = 15; a<=width-10;a=a+50){
-              plinkos.push(new plinko(a,375));
-             } 
+      }
+       
   
              
 }

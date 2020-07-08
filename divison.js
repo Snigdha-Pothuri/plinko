@@ -15,10 +15,7 @@ class division {
       rect(pos.x, pos.y, this.width, this.height);
 
       
-  for(var i =0; i<=width; i=i+80 ){
-    divisions.push(new division(i,height-divisionheight/2,10,divisionheight))
-    } 
-
+ 
     } 
 
     
