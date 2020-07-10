@@ -34,9 +34,7 @@ function setup() {
       plinkos.push(new plinko(a,275));
        } 
   
-       for (var a = 15; a<=width-10;a=a+50){
-        plinkos.push(new plinko(a,375));
-       } 
+   
 }
 
 function draw() {
@@ -52,6 +50,10 @@ function draw() {
     divisions[k].display();
     } 
 
+    if(frameCount%60===0){  
+      particles.push(new particle(random(width/2-30, width/2+30), 10,10)); 
+     } 
+     
     for (var j=0;j<particles.length; j=j+1) {
       particles[j].display();
     } 
@@ -60,9 +62,6 @@ function draw() {
       plinkos[e].display();
     } 
     
-    if(frameCount%60===0){  
-    particles.push(new particle(random(width/2-30, width/2+30), 10,10)); 
-   } 
 
   drawSprites();
   
